@@ -1,0 +1,69 @@
+acd1d3f 2026-11-11T20:23:14+05:30 Report: humanizer pass (10 local wording edits; numbers, links and structure unchanged) and public links
+5550013 2026-11-11T20:22:17+05:30 Publish: HF repos public with collections; links in README, article and cards; MIT licence
+9694b81 2026-11-11T20:18:15+05:30 Log gate3pub (release adapters) and private HF upload
+d245494 2026-11-11T20:14:18+05:30 Submission package: narrative report, abstract, README, HF staging/upload script; untrack paper copies
+f8d7c39 2026-11-11T20:08:04+05:30 Log publishing decision; add gate3pub kernel (release adapters)
+880d99c 2026-11-11T13:02:32+05:30 Article v2: figures renumbered in order, stale sentences and compute total fixed, affiliation draft; record hackathon rules (deadline Nov 15 AoE, public HF collections) and meter reading
+de410c3 2026-11-11T11:12:50+05:30 fig9: refusal vs task accuracy for scale-back, drift decomposition and RESTA arms
+c9570fe 2026-11-11T10:55:28+05:30 F/G results: scale-back does not suffice; drift SVD decomposition beats random and scale-back but fails its task bar; judge validation in RECAP, article, CLAUDE.md
+820df20 2026-11-11T02:48:49+05:30 Judge validation: Raj's 60 hand labels vs WildGuard (refusal kappa 1.0); add gate3dd stats script
+57915b1 2026-11-11T02:24:04+05:30 Add gate3dd kernel (F scale-back, G drift SVD decomposition) and judge
+7333a4c 2026-11-11T02:21:29+05:30 Pre-register F (scale-back baseline) and G (drift SVD decomposition); log takeover and hand-label review
+f5864a6 2026-11-10T16:33:02+05:30 Report: add E (magnitude baseline) to article, fig8, RECAP, CLAUDE.md
+972c128 2026-11-10T16:32:06+05:30 Log gate3mg (E): magnitude ranking does not suffice; attribution better at 10% and 25%
+461d30f 2026-11-10T15:57:40+05:30 Article: refresh TL;DR, limitations, novelty list for B/C/D
+9616737 2026-11-10T15:57:13+05:30 Article/RECAP: add D (zero-shot steering strength fails)
+38d0ce4 2026-11-10T15:36:25+05:30 Log gate3zs (D): H_D fails; static projections predict c ~ 1
+32306e5 2026-11-10T15:16:45+05:30 Log gate3mg (E) push
+c38b26b 2026-11-10T15:10:38+05:30 Pre-register E (magnitude baseline) and build gate3mg kernel; launch awaits Raj
+2e01207 2026-11-10T15:09:14+05:30 B checks: McNemar top-25% vs full, 20-set first-token table, first-token/judge agreement; RECAP wording
+7347dfc 2026-11-10T15:06:54+05:30 D: gate3zs kernel, judge, stats script; log push
+2dea27f 2026-11-10T15:04:34+05:30 Pre-register D: zero-shot steering strength (rule B primary, H_D)
+229525a 2026-11-10T14:07:48+05:30 B judged: Q2 = 25%, top beats random; fig8, article (f), RECAP, CLAUDE.md
+abd8596 2026-11-10T12:33:00+05:30 Log gate3sz (B) kernel: Q1 top beats random at every share
+d06c81a 2026-11-10T12:18:49+05:30 RECAP: add C results, B status, Aya judge probe
+789528d 2026-11-10T12:16:47+05:30 Log resta_paper3 (Δ3 judged) and add C follow-up (e) to article
+6c64188 2026-11-10T12:02:40+05:30 fig7: activation agreement of RESTA deltas (gate3c)
+c6b2ccd 2026-11-10T12:01:55+05:30 Log gate3c (C): activation agreement passes H_C
+e47e499 2026-11-10T11:43:31+05:30 fig4: add RESTA-as-published arm
+7c8410c 2026-11-10T11:42:51+05:30 BUDGET: B pushed in parallel with C
+43a2abe 2026-11-10T11:41:14+05:30 gate3c v2: grad accumulation for the BeaverTails un-align after v1 OOM
+018e3c9 2026-11-10T11:35:59+05:30 gate3_stats: massive_acc None for arms generated without MASSIVE
+88b5f2b 2026-11-10T11:35:40+05:30 Add gate3c (C) and gate3sz (B) kernels; pre-register B
+c30dd8c 2026-11-10T11:34:23+05:30 Log Aya judge probe (not usable) and budget
+a348ab3 2026-11-10T11:30:21+05:30 Pre-register C (activation agreement of RESTA deltas, Δ3 from BeaverTails)
+42e022e 2026-11-10T03:52:08+05:30 Log gate3a/gate3rc judged results; update article, RECAP, CLAUDE.md with follow-ups
+7a2a989 2026-11-10T02:59:05+05:30 gate3rc v2: grad accumulation for benign un-align after v1 OOM
+4f6cf14 2026-11-10T02:47:39+05:30 Log gate3p (head arms, paper Δ) and gate3r2 (disjoint un-align) judged results
+03b4d1a 2026-11-10T02:41:32+05:30 Pre-register random/benign Δ control (gate3rc, queued); log gate3r2 run
+2abc307 2026-11-10T02:35:09+05:30 BUDGET: 10 GPU-h left (Raj, 2026-11-10)
+e7f802d 2026-11-10T02:21:31+05:30 Pre-register and add kernels for disjoint-unalign RESTA and drift attribution
+8402058 2026-11-10T01:49:25+05:30 Add RECAP.md, CLAUDE.md status section, gate3p head-arm re-run kernel
+d45d65e 2026-11-10T00:52:23+05:30 Add faithful RESTA arm (paper recipe: aligned - un-aligned copy)
+ddf9266 2026-11-09T19:57:13+05:30 Lit review pass 2: verify CircuitKIT/RESTA claims, add Lee et al. and BabelSteering; update article and issue 05
+5d6e9e7 2026-11-09T19:50:35+05:30 Draft issues for CircuitKIT/SafeTune (not posted); correct article stack notes
+c280246 2026-11-09T19:46:15+05:30 Article figures 1-6 (aggregates only) wired into draft
+821abac 2026-11-09T19:42:20+05:30 HF article draft v0 (not for publication until Raj signs off)
+ddbca89 2026-11-09T18:40:30+05:30 Local hand-label dashboard (blind to judge label; output stays in git-ignored data/)
+c29d794 2026-11-07T21:59:13+05:30 Per-language steering strength sweep (steerpl arm)
+0a82ec3 2026-11-07T05:06:00+05:30 Budget: steering run
+a54879c 2026-11-07T05:05:45+05:30 Refusal steering arm: EN-only direction restores refusal in all 5 languages; P2 fails (opposite direction)
+057b7af 2026-11-07T04:31:42+05:30 Gate 3: judge results, stats, prediction scoring; exploratory full-RESTA alpha sweep
+6f1e99b 2026-11-07T03:03:43+05:30 Pre-register predictions.json before Gate 3; Gate 1/2 diagnostics; Gate 3 kernels
+3b3bce7 2026-11-07T01:25:43+05:30 Gate 0.5: geometry spread (rho, EN->L Procrustes) on aligned + drifted; Gate 1/2 kernel
+3b8920b 2026-11-06T21:26:45+05:30 Gate 0 results: drift confirmed (EN refusal 0.82 -> 0.04)
+41b46d3 2026-11-06T20:55:40+05:30 Log spot-check status and Gate 0 go
+72c4a5f 2026-11-06T20:16:59+05:30 Gate 0 paired statistics (bootstrap CI, exact McNemar)
+bb70964 2026-11-06T20:16:33+05:30 Gate 0: LoRA drift + generation kernel, WildGuard judge kernel, smoke runs
+d157477 2026-11-06T19:32:34+05:30 Data build: parallel prompt sets, MR/Hinglish translation scripts
+c3219f4 2026-11-06T19:02:42+05:30 Decision: translation method
+482ccdf 2026-11-06T19:01:16+05:30 Decisions: compute plan approved, MASSIVE as benign task
+baf14e1 2026-11-06T18:50:37+05:30 Decision: drop chat-template preamble
+58f5dba 2026-11-06T18:35:15+05:30 Gate -1 pass: HF token via private dataset, TL memory patch, EAP/EAP-IG fit on T4
+a382014 2026-11-05T23:25:21+05:30 Gate -1 v4: secret still unavailable; add private-dataset token fallback
+4d82981 2026-11-05T23:21:18+05:30 Gate -1 v3: CPU secret test, notebook type + retry still fails
+ec3847c 2026-11-05T23:16:18+05:30 Gate -1 v2: imports OK, Kaggle secret unavailable to API-pushed kernels
+7119b06 2026-11-05T23:15:27+05:30 Budget: only ~5 T4 GPU-h available
+50952f3 2026-11-05T23:11:48+05:30 Gate -1 v1 run: installs OK, HF secret not attached
+fb6dfa7 2026-11-05T23:06:00+05:30 Decision: 5th language = ZH
+91f4648 2026-11-05T22:52:37+05:30 Phase 0 setup: run/budget logs, decisions, lit review pass 1

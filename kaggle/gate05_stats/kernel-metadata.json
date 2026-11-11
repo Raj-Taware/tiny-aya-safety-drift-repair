@@ -1,0 +1,16 @@
+{
+  "id": "rajtaware10/lexsi-gate05-stats",
+  "title": "lexsi gate05 stats",
+  "code_file": "stats.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "false",
+  
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": ["rajtaware10/lexsi-gate05-acts"],
+  "model_sources": []
+}

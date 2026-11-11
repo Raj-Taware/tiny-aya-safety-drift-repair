@@ -1,0 +1,16 @@
+{
+  "id": "rajtaware10/lexsi-gate05-acts",
+  "title": "lexsi gate05 acts",
+  "code_file": "gate05.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["rajtaware10/hf-token", "rajtaware10/lexsi-data"],
+  "competition_sources": [],
+  "kernel_sources": ["rajtaware10/lexsi-gate0-drift"],
+  "model_sources": []
+}

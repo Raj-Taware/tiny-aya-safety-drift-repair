@@ -1,0 +1,16 @@
+{
+  "id": "rajtaware10/lexsi-gate3mg",
+  "title": "lexsi gate3mg",
+  "code_file": "gate3mg.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": ["rajtaware10/hf-token", "rajtaware10/lexsi-data"],
+  "competition_sources": [],
+  "kernel_sources": ["rajtaware10/lexsi-gate0-drift", "rajtaware10/lexsi-gate12"],
+  "model_sources": []
+}

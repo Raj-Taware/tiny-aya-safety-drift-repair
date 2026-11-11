@@ -1,0 +1,13 @@
+ext/
+.code-review-graph/
+__pycache__/
+*.safetensors
+.env
+kaggle.json
+kaggle/**/cache/
+data/
+kaggle/**/out*/
+papers/resta_*
+papers/circuitkit_*
+submission/hf/
+papers/cdeltatheta*

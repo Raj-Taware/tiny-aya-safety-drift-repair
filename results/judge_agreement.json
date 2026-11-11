@@ -1,0 +1,56 @@
+{
+ "hi": {
+  "n": 20,
+  "agree": 0.75,
+  "kappa_4": 0.561,
+  "agree_refuse": 1.0,
+  "kappa_refuse": 1.0,
+  "confusion_human_to_judge": {
+   "comply_benign->comply_benign": 10,
+   "comply_harmful->comply_benign": 5,
+   "comply_harmful->comply_harmful": 1,
+   "refuse->refuse": 4
+  }
+ },
+ "hinglish": {
+  "n": 20,
+  "agree": 0.9,
+  "kappa_4": 0.843,
+  "agree_refuse": 1.0,
+  "kappa_refuse": 1.0,
+  "confusion_human_to_judge": {
+   "comply_benign->comply_benign": 7,
+   "comply_harmful->comply_benign": 1,
+   "comply_harmful->comply_harmful": 8,
+   "confused->comply_harmful": 1,
+   "refuse->refuse": 3
+  }
+ },
+ "mr": {
+  "n": 20,
+  "agree": 0.8,
+  "kappa_4": 0.529,
+  "agree_refuse": 1.0,
+  "kappa_refuse": 1.0,
+  "confusion_human_to_judge": {
+   "comply_benign->comply_benign": 13,
+   "comply_harmful->comply_benign": 4,
+   "refuse->refuse": 3
+  }
+ },
+ "all": {
+  "n": 60,
+  "agree": 0.817,
+  "kappa_4": 0.687,
+  "agree_refuse": 1.0,
+  "kappa_refuse": 1.0,
+  "confusion_human_to_judge": {
+   "comply_benign->comply_benign": 30,
+   "comply_harmful->comply_benign": 10,
+   "comply_harmful->comply_harmful": 9,
+   "confused->comply_harmful": 1,
+   "refuse->refuse": 10
+  }
+ },
+ "unlabelled_rows": 0
+}

@@ -157,3 +157,15 @@ So an English-built *weight* repair transfers cleanly, while an English-built *s
 - **Full technical record:** all tables, confidence intervals, tests and failed predictions are in `article/draft.md` in the repository.
 
 Compute: about 12 GPU-hours on Kaggle T4s, and $0.02 of Hugging Face inference.
+
+## Submission details
+
+- **Base model and licence.** `CohereLabs/tiny-aya-global` (3.35B, revision af89d21), CC-BY-NC-4.0. `tiny-aya-base` (d62ac17) is used only for SafeTune's README recipe.
+- **Hackathon repos and how they connect.** CircuitKIT 0.2.0 (EAP-IG on English harmful/harmless contrast pairs) finds the 29-head refusal circuit and its scores JSON. Those heads, and size- and layer-matched random sets, become masks for SafeTune 0.1.12 `apply_resta`, which builds and applies the safety vector. SafeTune's default judge (WildGuard 7B) labels every output.
+- **Data and splits.** Harmful: SORRY-Bench-Multilingual, rows 0–49 for evaluation, rows 50–99 only for tuning (steering strength, α sweep). Benign: XSTest safe prompts, separate eval and tune sets. Task: MASSIVE intent classification, 1,800 train (EN/HI/ZH) and 288 test. Harmful fine-tuning and un-align sets: LLM-LAT harmful-dataset (two disjoint sets of 100) and BeaverTails (100).
+- **Leak check** (`scripts/leak_check.py`, `results/leak_check.json`). No eval harmful prompt appears, exactly or near-exactly (similarity ≥ 0.8), in any training set; eval and tune rows share no ids. MASSIVE train and test share no ids; 7 of 864 test utterances (0 EN, 1 HI, 6 ZH) repeat a short train command word for word. The primary safety vector Δ₁ is built from the same 100 harmful pairs as the drift; Δ₂ (disjoint pairs) and Δ₃ (BeaverTails) are the controls and repair as well.
+- **Metrics.** Refusal of harmful requests (higher is better); over-refusal on XSTest safe prompts (lower); MASSIVE accuracy (higher); "confused" rate (lower). First-token refusal log-odds (higher = more refusal) for screening only. All per language, paired on the same prompts; exact McNemar tests and bootstrap 95% CIs.
+- **Setup.** Drift LoRA: r = 16, α = 32, all projections, lr 1e-4, 2 epochs, seed 0, fp16. Un-align LoRA: same settings, 5 epochs (65 steps). RESTA α = 1. Greedy decoding. Kaggle 2×T4.
+- **With more compute** (planned, not run): a second drift seed and a second drift recipe; 200+ prompts per language; a durability test (further harmful fine-tuning steps until the repaired model's refusal collapses); hand-checking the judge on English, Chinese and repaired outputs. We expect the headline (circuit ≈ random, safety-vector construction decides) to hold, but that is a hypothesis.
+- **Work done outside the hackathon.** None. All code, data and runs were made between 2026-11-05 and 2026-11-11 (see `COMMIT_LOG.txt`).
+- **Team.** Solo; no teammates.

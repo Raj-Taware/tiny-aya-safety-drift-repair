@@ -296,3 +296,7 @@ Every run: date, what, config, seed, model rev, dataset rev, wall time, GPU-h, o
 - GitHub: https://github.com/Raj-Taware/tiny-aya-safety-drift-repair (public). It is a clean snapshot of this repository without `CLAUDE.md`, `RECAP.md`, `BUDGET.md`, `DRAFT_ISSUES.md`, `issues/` and `papers/`, plus `COMMIT_LOG.txt` (hashes, times, messages of the working repository). The working repository with full history stays local.
 - Report `article/report.md`: humanizer pass by a subagent (Raj's request), 10 local wording edits; numbers (112), URLs, headings, table and image lines checked identical to the pre-edit file by script.
 - `submission/hf_article.md` = the report with absolute image links, for pasting into an HF article. Not posted: the HF article and the submission form are Raj's to post.
+
+## 2026-11-15 — leak check (local, no GPU)
+- `python scripts/leak_check.py` → `results/leak_check.json`. Eval harmful rows 0–49 vs harmful_ft / unalign2 / unalign3: 0 exact, 0 near (difflib ≥ .8). Eval vs tune rows 50–99: 0 shared qids. XSTest eval vs tune: 0 shared ids. MASSIVE train vs test: 0 shared ids; 7 of 864 test utterances repeat a train command verbatim (EN 0, HI 1, ZH 6). Δ₁ shares harmful_ft with the drift (Δ₂, Δ₃ are disjoint). Wall time < 1 min, 0 GPU-h.
+- Report: added "Submission details" section (hackathon write-up template's required items); `submission/hf_article.md` regenerated.

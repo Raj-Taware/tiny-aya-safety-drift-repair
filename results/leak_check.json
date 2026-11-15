@@ -1,0 +1,41 @@
+{
+ "harmful_eval_vs_train": {
+  "harmful_ft.jsonl": {
+   "exact": 0,
+   "near_ge_0.8": 0,
+   "n_eval": 50,
+   "n_train": 100
+  },
+  "harmful_unalign2.jsonl": {
+   "exact": 0,
+   "near_ge_0.8": 0,
+   "n_eval": 50,
+   "n_train": 100
+  },
+  "harmful_unalign3.jsonl": {
+   "exact": 0,
+   "near_ge_0.8": 0,
+   "n_eval": 50,
+   "n_train": 100
+  }
+ },
+ "eval_rows_0_49_vs_tune_rows_50_99": {
+  "qid_overlap": 0,
+  "en_exact": 0
+ },
+ "xstest_safe_vs_tune": {
+  "id_overlap": 0,
+  "en_exact": 0
+ },
+ "massive_train_vs_test": {
+  "id_overlap": 0,
+  "exact_text_by_lang": {
+   "en": 0,
+   "hi": 1,
+   "zh": 6
+  },
+  "n_test": 288,
+  "n_train": 1800
+ },
+ "note": "Delta_1 (paper RESTA) is un-aligned on the same harmful_ft.jsonl pairs used in the drift; Delta_2 (harmful_unalign2) and Delta_3 (harmful_unalign3, BeaverTails) are the disjoint controls."
+}
